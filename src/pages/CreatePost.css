@@ -1,0 +1,12 @@
+.createPost{
+    position:absolute;
+    background-color:#FCF5E5;
+    border: 2px double black;
+    border-radius:10px;
+    width:600px;
+    height:400px;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}

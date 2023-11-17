@@ -1,0 +1,22 @@
+.Post{
+    background-color:antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+}
+img{
+    width: 200px;
+    height:200px;
+}
+.links{
+    text-align:right;
+    position: absolute;
+    top: 0px;
+    right:20px;
+}
+.link{
+    margin-left: 0px;
+}

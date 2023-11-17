@@ -1,0 +1,20 @@
+.FullPost{
+    position:absolute;
+    background-color:antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: 1000px;
+    top:300px;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+img{
+    width: 500px;
+    height:500px;
+}
+input{
+    position:relative;
+    width:70%;
+}

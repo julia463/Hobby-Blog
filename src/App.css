@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; 
+} 
+
+
+
+.card {
+  padding: 2em;
+}
+
+
+
+body{
+  background-color: #F6DDEA;
+  font-family: 'Playfair Display', serif;
+}
+
+h1{
+  position:absolute;
+  font-family: 'Pinyon Script', cursive;
+  top:5%;
+  left:50%;
+  transform:translateX(-50%);
+}
+p{
+  position:absolute;
+  top:15%;
+  left:50%;
+  transform:translateX(-50%);
+}
+nav{
+  text-align:left;
+  background-color:hotpink;
+  position:fixed;
+  color:white;
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  left:0;
+  z-index:100;
+}
