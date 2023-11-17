@@ -29,30 +29,30 @@ const ReadPosts = (props) => {
   };
 
   useEffect(() => {
-  const fetchData = async () => {
-    try{
-    if (sortType === "time") {
-      //Make filtered Data be sorted by recent
-      const { data, error } = await supabase
-        .from("Posts")
-        .select()
-        .order("created_at", { ascending: true });
+    const fetchData = async () => {
+      try {
+        if (sortType === "time") {
+          //Make filtered Data be sorted by recent
+          const { data, error } = await supabase
+            .from("Posts")
+            .select()
+            .order("created_at", { ascending: false });
 
-      setFilteredResults(data);
-    } else {
-      const { data, error } = await supabase
-        .from("Posts")
-        .select()
-        .order("upvoteCount", { ascending: false });
+          setFilteredResults(data);
+        } else {
+          const { data, error } = await supabase
+            .from("Posts")
+            .select()
+            .order("upvoteCount", { ascending: false });
 
-      setFilteredResults(data);
-    }
-  } catch(error){
-    console.log("error")
-  }
-  };
-  fetchData();
-},[sortType]);
+          setFilteredResults(data);
+        }
+      } catch (error) {
+        console.log("error");
+      }
+    };
+    fetchData();
+  }, [sortType]);
 
   return (
     <div className="ReadPosts">
@@ -62,7 +62,11 @@ const ReadPosts = (props) => {
         onChange={(e) => searchItems(e.target.value)}
       ></input>
       <label> Sort by: </label>
-      <select id="sortBy" name="sortBy" onChange={(e) => setSortType(e.target.value)}>
+      <select
+        id="sortBy"
+        name="sortBy"
+        onChange={(e) => setSortType(e.target.value)}
+      >
         <option value="time">Recently Created</option>
         <option value="pop">Most Popular</option>
       </select>
