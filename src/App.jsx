@@ -36,7 +36,7 @@ function App() {
           <Link to="/new"> New Post</Link>
         </nav>
         <div className="header">
-          <h1>🌹RoseHub🌹</h1>
+          <h1>🌹Romance Blog🌹</h1>
           <p>
             Do you LOVE love? Is Valentine's Day your favorite holiday? Do you
             gush at rom coms, love songs, or romance novels? If so, RoseHub is
