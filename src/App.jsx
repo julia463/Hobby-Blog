@@ -39,8 +39,8 @@ function App() {
           <h1>🌹Romance Blog🌹</h1>
           <p>
             Do you LOVE love? Is Valentine's Day your favorite holiday? Do you
-            gush at rom coms, love songs, or romance novels? If so, RoseHub is
-            the place for you! RoseHub is a place for romance enthusiasts to
+            gush at rom coms, love songs, or romance novels? If so, this is
+            the place for you! This blog is a place for romance enthusiasts to
             unite and discuss various romantic media!
           </p>
         </div>
